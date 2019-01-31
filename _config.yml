@@ -1,0 +1,4 @@
+encoding: UTF-8
+markdown: kramdown
+highlighter: pygments
+exclude: ['README.md']

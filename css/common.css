@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+}
+
+.left_panel {
+	min-height: 100vh;
+	position: fixed;
+	top: 0;
+	padding-top: 10%;
+	background-color: #2C3E50;
+	color: #fff;
+	width: 25%;
+	float: left;
+}
+
+.nav > ul {
+	list-style-type: none;
+	background-color: red;
+}
+
+.nav_current {	
+	background-color: green;
+}
+
+.page_container {
+	margin-left: 25%;
+	width: 75%;
+	float: left;
+	padding: 0 15px 0 15px;
+}
