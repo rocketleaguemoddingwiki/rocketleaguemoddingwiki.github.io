@@ -11,7 +11,7 @@ C:\UDK
 ```
 
 # 2 - Dummy Classes
-Download [this classes](https://github.com/timunrue/RL-Dummy-Classes-v2)
+Download [this classes](https://github.com/timunrue/RL-Dummy-Classes-v2)<br/>
 Extract the zip file<br/>
 Copy and paste **only** the folders in it (ProjectX and TAGame) there:
 ```
@@ -21,10 +21,14 @@ The two other files are just Github generated files, it's not needed.<br/>
 
 # 3 - Make UDK aware of the Dummy Classes
 Go in the following folder:<br/>
-`C:\UDK\UDK-2013-02\UDKGame\Config`<br/>
+```
+C:\UDK\UDK-2013-02\UDKGame\Config
+```
 and open the **DefaultEngine.ini** file with ([Notepad++](https://notepad-plus-plus.org/) or any other file editing software.<br/><br/>
 Under the heading **[UnrealEd.EditorEngine]**, add these two highlighted lines:
-``` hl_lines="4 5"
+
+hl_lines="4 5"
+``` python
 [UnrealEd.EditorEngine]
 +EditPackages=UTGame
 +EditPackages=UTGameContent
@@ -44,7 +48,7 @@ C:\UDK\UDK-2013-02\Development\Src\Engine\Classes
 ```
 Open the **StaticMeshActor.uc** file with Notepad++ and find the **defaultproperties** line.<br/>
 Change it to be like with the higkighted lines below:
-``` bash hl_lines="7 8 9"
+```python
 defaultproperties
 {
 	Begin Object Class=StaticMeshComponent Name=StaticMeshComponent0
