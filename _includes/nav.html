@@ -1,10 +1,12 @@
 <nav class="nav">
     <ul>
         {% assign links = site.data.navigation %}
+        {% assign count = 0 %}
+
         {% for link in links %}
 
             {% assign isCurrentPage = nil %}
-            {% assign count = increment counter %}
+            
 
             {% if page.url contains link.url %}
                 {% assign isCurrentPage = 'current_menu_item' %}
@@ -26,10 +28,12 @@
             {% else %}
 
                 <li class="{{ isCurrentPage }}">
-                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }} {{ count }}.</a>
                 </li>
                 
             {% endif %}
+
+            {% assign count = count | plus:1 %}
 
         {% endfor %}
     </ul>
