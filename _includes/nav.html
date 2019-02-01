@@ -4,12 +4,11 @@
         {% for link in links %}
 
             {% assign isCurrentPage = nil %}
+            {% assign count = increment counter %}
 
             {% if page.url contains link.url %}
                 {% assign isCurrentPage = 'current_menu_item' %}
-            {% endif %}
-
-            {% assign count = increment counter %}
+            {% endif %}            
 
             {% if link.sublinks %}                
 
