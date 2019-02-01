@@ -1,4 +1,6 @@
-function changeDisplay(id, type) {
+
+
+function changeDisplay(event, id, type) {
 
 	var element = document.getElementById(id);
 	var display = getStyle(element, "display");
@@ -8,6 +10,8 @@ function changeDisplay(id, type) {
 	} else {
 		element.style.display = "none";
 	}
+
+	event.preventDefault();
 
 }
 

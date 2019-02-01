@@ -15,10 +15,10 @@
             {% if link.sublinks %}                
 
                 <li class="{{ isCurrentPage }}">
-                    <button class="menu_item" onclick="changeDisplay('dropdown_{{ count }}', 'block')"><strong>{{ link.title }}</strong></button>
+                    <a onclick="changeDisplay(event, 'dropdown_{{ count }}', 'block')"><strong>{{ link.title }}</strong></a>
                     <ul id="dropdown_{{ count }}" class="dropdown">
                         {% for sublink in link.sublinks %}
-                            <li class="menu_sub_item">
+                            <li>
                                 <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
                             </li>
                         {% endfor %}
@@ -28,7 +28,7 @@
             {% else %}
 
                 <li class="{{ isCurrentPage }}">
-                    <a class="menu_item" href="{{ site.baseurl }}{{ link.url }}"><strong>{{ link.title }}</strong></strong></a>
+                    <a href="{{ site.baseurl }}{{ link.url }}"><strong>{{ link.title }}</strong></strong></a>
                 </li>
                 
             {% endif %}
