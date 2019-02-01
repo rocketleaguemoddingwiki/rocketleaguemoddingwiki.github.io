@@ -11,12 +11,11 @@ function changeDisplay(id, type) {
 
 }
 
-function getStyle(el, styleProp)
+function getStyle(element, property)
 {
-	var x = document.getElementById(el);
-	if (x.currentStyle)
-		var y = x.currentStyle[styleProp];
+	if (element.currentStyle)
+		var y = element.currentStyle[property];
 	else if (window.getComputedStyle)
-		var y = document.defaultView.getComputedStyle(x,null).getPropertyValue(styleProp);
+		var y = document.defaultView.getComputedStyle(element, null).getPropertyValue(property);
 	return y;
 }
