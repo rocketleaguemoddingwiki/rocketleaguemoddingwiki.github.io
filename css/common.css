@@ -30,7 +30,6 @@ a:hover {
 
 .nav > ul {
 	list-style-type: none;
-	background-color: #273747;
 	padding: 10px;
 }
 
@@ -76,4 +75,35 @@ code.highlighter-rouge {
 	border-radius: 3px;
 	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	font-size: .85em;
+}
+
+.carret {
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+}
+
+.carret-left {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right:10px solid white;
+}
+
+.carret-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid white;
+}
+
+.dropdown {
+	display: none;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
 }
