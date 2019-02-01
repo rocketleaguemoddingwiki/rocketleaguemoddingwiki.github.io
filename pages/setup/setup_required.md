@@ -1,7 +1,7 @@
 ---
 layout: default
+title: Setup (Required)
 ---
-# Setup (Required)
 
 # 1 - UDK
 Download and install [this specific](https://www.dropbox.com/s/t1hw4wwnugyzmec/UDKInstall-2013-02-BETA.exe?dl=0) UDK version.<br/>
