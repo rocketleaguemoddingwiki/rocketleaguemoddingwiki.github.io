@@ -20,7 +20,7 @@ title: Your Page Title
 ---
 ```
 
-Then, add the path of this file in the `nav.html` file in the `_includes` folder.
+Then, add the url and title of this page in the `navigation.yml` file in the `_data` folder.
 
 # How to make awesome pages ?
 Github pages like ours use `Jekyll` to convert `.md` files into `.html`.
