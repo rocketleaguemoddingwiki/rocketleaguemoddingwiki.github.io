@@ -25,9 +25,7 @@ Go in the following folder:<br/>
 C:\UDK\UDK-2013-02\UDKGame\Config
 ```
 and open the **DefaultEngine.ini** file with ([Notepad++](https://notepad-plus-plus.org/) or any other file editing software.<br/><br/>
-Under the heading **[UnrealEd.EditorEngine]**, add these two highlighted lines:
-
-hl_lines="4 5"
+Under the heading **[UnrealEd.EditorEngine]**, add these last two lines:
 ``` python
 [UnrealEd.EditorEngine]
 +EditPackages=UTGame
@@ -35,12 +33,12 @@ hl_lines="4 5"
 +EditPackages=ProjectX
 +EditPackages=TAGame
 ```
-It is `sensitive` to the order, so be sure they are in that order.<br/>
+It is `sensitive to the order`, so be sure they are in that order.<br/>
 Save and close the file<br/>
 <br/>
-NB: _The next time you open UDK, it will ask you to **recompile scripts**. Accept. A command line window will open. When it's finished, you will need to close the command line window manually and relaunch UDK again._
+> The next time you open UDK, it will ask you to **recompile scripts**. Accept. A command line window will open. When it's finished, you will need to close the command line window manually and relaunch UDK again.
 
-# 4 - Sticky Wall
+# 4 - Sticky Walls™
 We need another step to make the editor Rocket League friendly.<br/>
 Go to this folder:
 ```

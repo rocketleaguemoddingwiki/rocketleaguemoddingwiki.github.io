@@ -6,11 +6,25 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
+	background-color: #e9ebed;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+blockquote p {
+	border-left: 0.3em solid #2C3E50;
+	padding-left: 0.5em;
+}
+
+h1 {
+	padding: 0.2em 1em;
+	margin-left: -50px;
+	margin-top: 50px;
+	font-size: 1.5em;
+	color: #2C3E50;
 }
 
 /* 
@@ -159,8 +173,8 @@ pre.highlight {
 
 code.highlighter-rouge {
 	padding: .1em .4em;
-	background: #e8f2fb;
-	border: 1px solid #c9e1f6;
+	background: #f9dcd8/*#e8f2fb*/;
+	border: 1px solid #f0a99f/*#c9e1f6*/;
 	border-radius: 3px;
 	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	font-size: .85em;
