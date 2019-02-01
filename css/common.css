@@ -9,7 +9,7 @@ a {
 	color: #e25440;
 }
 
-a:hover {
+a:hover, button:hover {
 	color: #b9301c;
 	-o-transition: .5s;
 	-ms-transition: .5s;
@@ -44,6 +44,18 @@ a:hover {
 	-ms-transition: .5s;
 	-moz-transition: .5s;
 	-webkit-transition: .5s;
+}
+
+.menu_item {
+	border: none;
+	display: block;
+	padding: 0;
+	text-decoration: none;
+	color: #e25440;
+}
+
+.menu_sub_item {
+	
 }
 
 .current_menu_item {	
