@@ -1,7 +1,7 @@
 # Blender
 [Blender](https://www.blender.org/download/) is a free 3D Modelling software. You can use it to create all the parts of your map, including meshes and UVs.
 This wiki won't teach you how to model, but you can find a lot of tutorials online and on Youtube.
-## PSK Plugin
+## - PSK Plugin
 Exported Skeleton Meshes from Rocket League files are `.pskx` files. To open them in Blender, first rename the file to `.psk`, then go to `File > User Preferences > Add-ons` then search for *`Import Unreal Skeleton Mesh (.psk)/Animation Set (psa)`* and enable it.
 
 # Rocket League UPK Decryptor
