@@ -13,7 +13,7 @@
             {% if link.sublinks %}                
 
                 <li class="{{ isCurrentPage }}">
-                    <button onclick="changeDisplay('dropdown_{{ count }}', 'block')">{{ link.title }}<span class="caret"></span></button>
+                    <button onclick="changeDisplay('dropdown_{{ count }}', 'block')">{{ link.title }} {{ count }}.<span class="caret"></span></button>
                     <ul id="dropdown_{{ count }}" class="dropdown">
                         {% for sublink in link.sublinks %}
                             <li>
