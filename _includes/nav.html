@@ -4,16 +4,16 @@
         {% for link in links %}
 
             {% assign isCurrentPage = nil %}
-            {% assign counter = 0 %}
 
             {% if page.url contains link.url %}
                 {% assign isCurrentPage = 'current_menu_item' %}
             {% endif %}
 
             {% if link.sublinks %}
+
                 <li class="{{ isCurrentPage }}">
                     <button onclick="changeDisplay('dropdown_{{ counter }}', 'block')">{{ link.title }}<span class="caret"></span></button>
-                    <ul id="dropdown_{{ counter }}" class="dropdown">
+                    <ul id="dropdown_{% increment counter %}" class="dropdown">
                         {% for sublink in link.sublinks %}
                             <li>
                                 <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
@@ -21,13 +21,14 @@
                         {% endfor %}
                     </ul>
                 </li>
+
             {% else %}
+
                 <li class="{{ isCurrentPage }}">
                     <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                 </li>
+                
             {% endif %}
-
-            {% assign counter = counter + 1 %}
 
         {% endfor %}
     </ul>
