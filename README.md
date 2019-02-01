@@ -8,7 +8,8 @@ Github let you create and edit `.md` files directly here.
 To edit, there's an :pencil2: icon at the top right of a file page.
 To create, there's a Create new file button at the top right when you're in a folder. You can create a folder by specifying it like:
 `myfolder/myfile.md`
-:warning: Please, try to respect the organization of the folders and create only .md files in the `pages` folder.
+
+:warning: Please, try to respect the organization of the folders and create only `.md` files in the `pages` folder.
 
 
 The file must start with this following header:
