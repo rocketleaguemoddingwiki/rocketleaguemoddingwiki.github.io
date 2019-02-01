@@ -5,8 +5,8 @@ title: Useful Softwares
 # Blender
 [Blender](https://www.blender.org/download/) is a free 3D Modelling software. You can use it to create all the parts of your map, including meshes and UVs.
 This wiki won't teach you how to model, but you can find a lot of tutorials online and on Youtube.
-## - PSK Plugin
-Exported Skeleton Meshes from Rocket League files are `.pskx` files. To open them in Blender, first rename the file to `.psk`, then go to `File > User Preferences > Add-ons` then search for *`Import Unreal Skeleton Mesh (.psk)/Animation Set (psa)`* and enable it.
+> ## PSK Plugin
+> Exported Skeleton Meshes from Rocket League files are `.pskx` files. To open them in Blender, first rename the file to `.psk`, then go to `File > User Preferences > Add-ons` then search for *`Import Unreal Skeleton Mesh (.psk)/Animation Set (psa)`* and enable it.
 
 # Rocket League UPK Decryptor
 [Rocket League UPK Decryptor](https://www.reddit.com/r/RocketLeague/comments/5751g0/i_fixed_the_decryptor_tool_we_now_have_exact/) is a tool to decrypt `.upk` files. Normally you wouldn't be able to use `.upk` files from Rocket League but with this tool you can decrypt and then import the decrypted files `_decrypted.upk` to other softwares.
