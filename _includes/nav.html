@@ -9,9 +9,9 @@
                 {% assign isCurrentPage = 'current_menu_item' %}
             {% endif %}
 
-            {% if link.sublinks %}
+            {% assign count = increment counter %}
 
-                {% assign count = increment counter %}
+            {% if link.sublinks %}                
 
                 <li class="{{ isCurrentPage }}">
                     <button onclick="changeDisplay('dropdown_{{ count }}', 'block')">{{ link.title }}<span class="caret"></span></button>
