@@ -47,7 +47,7 @@ a:hover {
 	-webkit-transition: .5s;
 }
 
-.nav_current {	
+.current_menu_item {	
 	background-color: #43607C;
 }
 

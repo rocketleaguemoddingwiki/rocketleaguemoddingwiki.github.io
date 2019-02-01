@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Setup (Required)
+title: SETUP (Required)
 ---
 
 # 1 - UDK

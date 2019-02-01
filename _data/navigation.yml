@@ -1,0 +1,17 @@
+- title: HOME
+url: /index.html
+
+- title: SETUP
+sublinks:
+  - title: Required
+  url: /pages/setup/setup_required.html
+  - title: Advanced (optional)
+  url: /pages/setup/setup_advanced.html
+
+- title: SOFTWARES
+url: /pages/softwares/softwares.html
+
+- title: TUTORIALS
+sublinks:
+  - title: How to make good textures ?
+  url: /pages/tutorials/how_to_make_good_textures.html
