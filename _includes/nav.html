@@ -1,40 +1,52 @@
+<nav class="nav_header">
+	<a href="{{ site.baseurl }}/index.html">
+		MODDING WIKI
+	</a>
+</nav>
+
 <nav class="nav">
-    <ul>
-        {% assign links = site.data.navigation %}
-        {% assign count = 0 %}
+	<ul>
+		{% assign links = site.data.navigation %}
+		{% assign count = 0 %}
 
-        {% for link in links %}
+		{% for link in links %}
 
-            {% assign isCurrentPage = nil %}
-            
+			{% assign isCurrentPage = nil %}
 
-            {% if page.url contains link.url %}
-                {% assign isCurrentPage = 'current_menu_item' %}
-            {% endif %}            
+			{% if page.url contains link.url %}
+				{% assign isCurrentPage = 'current_menu_item' %}
+			{% endif %}
 
-            {% if link.sublinks %}                
+			{% if link.sublinks %}
+				<li id="{{ isCurrentPage }}" class="js_identifier_category">
+					<a class="menu_item" onclick="changeDisplay(event, 'dropdown_{{ count }}', 'block')"><strong>{{ link.title }}</strong></a>
+					<ul id="dropdown_{{ count }}" class="dropdown">
+						{% for sublink in link.sublinks %}
 
-                <li class="menu_item_category {{ isCurrentPage }}">
-                    <a onclick="changeDisplay(event, 'dropdown_{{ count }}', 'block')"><strong>{{ link.title }}</strong></a>
-                    <ul id="dropdown_{{ count }}" class="dropdown">
-                        {% for sublink in link.sublinks %}
-                            <li>
-                                <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </li>
+							{% assign isCurrentSubPage = nil %}
 
-            {% else %}
+							{% if page.url contains sublink.url %}
+								{% assign isCurrentSubPage = 'current_menu_item' %}
+							{% endif %}
 
-                <li class="{{ isCurrentPage }}">
-                    <a href="{{ site.baseurl }}{{ link.url }}"><strong>{{ link.title }}</strong></strong></a>
-                </li>
-                
-            {% endif %}
+							<li id="{{ isCurrentSubPage }}" class="js_identifier_submenu_item">
+								<a class="submenu_item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</i></a>
+							</li>
 
-            {% assign count = count | plus:1 %}
+						{% endfor %}
+					</ul>
+				</li>
 
-        {% endfor %}
-    </ul>
+			{% else %}
+
+				<li id="{{ isCurrentPage }}" class="js_identifier_menu_item">
+					<a class="menu_item" href="{{ site.baseurl }}{{ link.url }}"><strong>{{ link.title }}</strong></strong></a>
+				</li>
+				
+			{% endif %}
+
+			{% assign count = count | plus:1 %}
+
+		{% endfor %}
+	</ul>
 </nav>

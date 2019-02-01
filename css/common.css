@@ -1,3 +1,7 @@
+html {
+	overflow-y: scroll;
+}
+
 body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
@@ -9,18 +13,14 @@ img {
 	height: auto;
 }
 
-a {
-	text-decoration: none;
-	color: #e25440;
-}
-
-a:hover, button:hover {
-	color: #b9301c;
-	-o-transition: .5s;
-	-ms-transition: .5s;
-	-moz-transition: .5s;
-	-webkit-transition: .5s;
-}
+/* 
+██╗     ███████╗███████╗████████╗    ██████╗  █████╗ ███╗   ██╗███████╗██╗     
+██║     ██╔════╝██╔════╝╚══██╔══╝    ██╔══██╗██╔══██╗████╗  ██║██╔════╝██║     
+██║     █████╗  █████╗     ██║       ██████╔╝███████║██╔██╗ ██║█████╗  ██║     
+██║     ██╔══╝  ██╔══╝     ██║       ██╔═══╝ ██╔══██║██║╚██╗██║██╔══╝  ██║     
+███████╗███████╗██║        ██║       ██║     ██║  ██║██║ ╚████║███████╗███████╗
+╚══════╝╚══════╝╚═╝        ╚═╝       ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝
+ */
 
 .left_panel {
 	min-height: 100vh;
@@ -33,51 +33,119 @@ a:hover, button:hover {
 	float: left;
 }
 
-.nav > ul {
+.nav_header {
+	border-bottom: 3px solid #233140;
+	position: fixed;
+	top: 0;
+	width: 25%;
+}
+
+.nav_header a {
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	top: 0;
+	font-size: 2.5em; 
+}
+
+.nav ul {
 	list-style-type: none;
-	padding: 10px;
+	padding: 0;
 }
 
-.nav_button {
-	background-color: #1a2530;
-	margin-bottom: 10px;
+.nav a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;	
+	width: 100%;
+	box-sizing: border-box;
 }
 
-.nav_button:hover {
-	background-color: #43607C;
+.nav a:hover {
+	background-color: #415161;
+}
+
+.menu_item {
+	border: none;
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+	color: #e25440;
+}
+
+.submenu_item {
+
+	padding-left: 20px;
+}
+
+.menu_item:hover {
+	cursor: pointer;	
+}
+
+#current_menu_item {	
+	background-color: #273748;
+}
+
+.dropdown {
+	display: none;
 	-o-transition: .5s;
 	-ms-transition: .5s;
 	-moz-transition: .5s;
 	-webkit-transition: .5s;
 }
 
-.menu_item {
-	border: none;
-	display: block;
-	padding: 0;
-	text-decoration: none;
-	color: #e25440;
-}
+/*
+██████╗  █████╗  ██████╗ ███████╗     ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗ ██╗███╗   ██╗███████╗██████╗ 
+██╔══██╗██╔══██╗██╔════╝ ██╔════╝    ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝██╔══██╗
+██████╔╝███████║██║  ███╗█████╗      ██║     ██║   ██║██╔██╗ ██║   ██║   ███████║██║██╔██╗ ██║█████╗  ██████╔╝
+██╔═══╝ ██╔══██║██║   ██║██╔══╝      ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██║██║██║╚██╗██║██╔══╝  ██╔══██╗
+██║     ██║  ██║╚██████╔╝███████╗    ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║██║██║ ╚████║███████╗██║  ██║
+╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
+*/
 
-.menu_sub_item {
-
-}
-
-.menu_item_category:hover {
-	cursor: pointer;
-}
-
-.current_menu_item {	
-	background-color: #43607C;
-}
-
-.page_container, .footer {
+.page_container {
 	margin-left: 25%;
 	margin-top: 50px;
 	float: left;
 	padding: 0 10%;
 	word-break: break-word;
+	min-height: 100vh;
 }
+
+.footer_container {
+	color: white;
+	background-color: #233140;
+	margin-left: 25%;
+	margin-top: 50px;
+	float: left;
+	padding: 0 10%;
+	width: 55%;
+}
+
+.page_container a {
+	text-decoration: none;
+	color: #e25440;
+}
+
+.page_container a:hover {
+	color: #b9301c;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+}
+
+/*
+██╗  ██╗██╗ ██████╗ ██╗  ██╗██╗     ██╗ ██████╗ ██╗  ██╗████████╗
+██║  ██║██║██╔════╝ ██║  ██║██║     ██║██╔════╝ ██║  ██║╚══██╔══╝
+███████║██║██║  ███╗███████║██║     ██║██║  ███╗███████║   ██║   
+██╔══██║██║██║   ██║██╔══██║██║     ██║██║   ██║██╔══██║   ██║   
+██║  ██║██║╚██████╔╝██║  ██║███████╗██║╚██████╔╝██║  ██║   ██║   
+╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝
+*/
 
 div.highlight {
 	padding: 0 13px 0 13px;
@@ -96,35 +164,4 @@ code.highlighter-rouge {
 	border-radius: 3px;
 	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	font-size: .85em;
-}
-
-.carret {
-	-o-transition: .5s;
-	-ms-transition: .5s;
-	-moz-transition: .5s;
-	-webkit-transition: .5s;
-}
-
-.carret-left {
-	width: 0; 
-	height: 0; 
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-right:10px solid white;
-}
-
-.carret-down {
-	width: 0; 
-	height: 0; 
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid white;
-}
-
-.dropdown {
-	display: none;
-	-o-transition: .5s;
-	-ms-transition: .5s;
-	-moz-transition: .5s;
-	-webkit-transition: .5s;
 }
