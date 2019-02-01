@@ -1,5 +1,20 @@
 body {
 	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration: none;
+	color: #e25440;
+}
+
+a:hover {
+	color: #b9301c;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
 }
 
 .left_panel {
@@ -15,27 +30,50 @@ body {
 
 .nav > ul {
 	list-style-type: none;
-	background-color: red;
+	background-color: #273747;
+	padding: 10px;
+}
+
+.nav_button {
+	background-color: #1a2530;
+	margin-bottom: 10px;
+}
+
+.nav_button:hover {
+	background-color: #43607C;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
 }
 
 .nav_current {	
-	background-color: green;
+	background-color: #43607C;
 }
 
-.page_container {
+.page_container, .footer {
 	margin-left: 25%;
-	width: 75%;
+	margin-top: 50px;
 	float: left;
-	padding: 0 15px 0 15px;
+	padding: 0 10%;
+	word-break: break-word;
 }
 
 div.highlight {
 	padding: 0 13px 0 13px;
 	border-radius: 4px;
-	max-width: 50%;
 }
 
 pre.highlight {
 	padding: 13px 0 13px 0;
 	margin: 0;
+}
+
+code.highlighter-rouge {
+	padding: .1em .4em;
+	background: #e8f2fb;
+	border: 1px solid #c9e1f6;
+	border-radius: 3px;
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+	font-size: .85em;
 }
