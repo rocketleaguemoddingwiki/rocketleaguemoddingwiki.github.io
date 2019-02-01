@@ -55,7 +55,11 @@ a:hover, button:hover {
 }
 
 .menu_sub_item {
-	
+
+}
+
+.menu_item_category:hover {
+	cursor: pointer;
 }
 
 .current_menu_item {	
