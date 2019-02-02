@@ -56,7 +56,7 @@ h3 {
 }
 
 .nav_header {
-	border-bottom: 3px solid #233140;
+	border-bottom: 10px solid #233140;
 	width: 100%;
 }
 
@@ -77,6 +77,11 @@ h3 {
 
 .search_block {
 	padding: 1em;
+	border-bottom: 10px solid #233140;
+}
+
+.search_item {
+	border-bottom: 1px solid #233140;
 }
 
 #search_input {
@@ -125,7 +130,6 @@ h3 {
 }
 
 .menu_item {
-	border: none;
 	display: block;
 	padding: 10px;
 	text-decoration: none;
@@ -197,20 +201,25 @@ h3 {
 */
 
 .tags {
-	margin-left: 25%;
-	margin-top: 50px;
 	float: left;
-	padding: 0 10%;
-	width: 55%;
+	margin-bottom: 50px;
+	width: 100%;
 }
 
 .tag {
-	padding: .1em .4em;
+	padding: .4em 1em;
 	background: #e8f2fb;
 	border: 1px solid #c9e1f6;
 	border-radius: 3px;
-	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+	font-family: Consolas, monospace, serif;
 	font-size: .85em;
+	font-weight: bolder;
+}
+
+.tag:hover {
+	background: #c9e1f6;
+	border-color: #c9e1f6;
+	cursor: pointer;
 }
 
 .page_container {

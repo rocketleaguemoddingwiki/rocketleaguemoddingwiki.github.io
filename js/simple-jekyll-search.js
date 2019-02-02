@@ -382,6 +382,12 @@ var _$src_8 = {};
         emptyResultsContainer()
         search(e.target.value)
       }
+    });
+    options.searchInput.addEventListener('focusout', function (e) {
+      if (isWhitelistedKey(e.which)) {
+        emptyResultsContainer()
+        search(e.target.value)
+      }
     })
   }
 

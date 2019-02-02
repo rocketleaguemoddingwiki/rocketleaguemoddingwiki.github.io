@@ -59,6 +59,8 @@
 	</ul>
 </nav>
 
+{% if page.indexed %}
 <a class="improve" onclick="editPage(event, '{{ currentPage }}')">
 	<i class="fas fa-edit improve_icon"></i><span class="improve_text">Edit this page</span>
 </a>
+{% endif %}

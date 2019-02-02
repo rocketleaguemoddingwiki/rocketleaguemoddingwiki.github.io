@@ -42,6 +42,26 @@ function editPage(event, path) {
 	window.open(pageToOpen, '_blank');
 }
 
+function addTagToSearch(event, tag) {
+	var element = document.getElementById("search_input");
+
+	if (element.value === "") {
+		tag = tag + " "
+	} else {
+		var lastChar = element.value[element.value.length -1];
+		if (lastChar === " ") {
+			tag = tag + " "
+		} else {
+			tag = " " + tag + " "
+		}
+	}
+
+	element.focus();
+	element.value += tag
+	element.blur();
+	event.preventDefault();
+}
+
 window.onload = function () { 
 
 	// Get the selected menu item, and if it is a submenu item, open the category
