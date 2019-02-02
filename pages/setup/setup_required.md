@@ -1,6 +1,15 @@
 ---
 layout: default
 title: SETUP (Required)
+indexed: true
+tags:
+  - setup
+  - udk
+  - dummy
+  - classes
+  - sticky
+  - wall
+  - walls
 ---
 
 # 1 - UDK

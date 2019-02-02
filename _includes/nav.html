@@ -4,6 +4,11 @@
 	</a>
 </nav>
 
+<div class="search_block">
+	<input id="search_input" type="text" placeholder="Search ...">
+	<div id="search_results"></div>
+</div>
+
 <nav class="nav">
 	<ul>
 		{% assign links = site.data.navigation %}
@@ -33,7 +38,7 @@
 							{% endif %}
 
 							<li id="{{ isCurrentSubPage }}" class="js_identifier_submenu_item">
-								<a class="submenu_item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</i></a>
+								<a class="menu_item submenu_item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</i></a>
 							</li>
 
 						{% endfor %}

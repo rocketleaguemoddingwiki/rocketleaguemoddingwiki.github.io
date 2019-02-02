@@ -49,7 +49,6 @@ h3 {
 	min-height: 100vh;
 	position: fixed;
 	top: 0;
-	padding-top: 10%;
 	background-color: #2C3E50;
 	color: #fff;
 	width: 25%;
@@ -58,9 +57,7 @@ h3 {
 
 .nav_header {
 	border-bottom: 3px solid #233140;
-	position: fixed;
-	top: 0;
-	width: 25%;
+	width: 100%;
 }
 
 .nav_header a {
@@ -68,7 +65,6 @@ h3 {
 	display: inline-block;
 	width: 100%;
 	text-align: center;	
-	vertical-align: middle;
 	padding: 16px 0;
 	font-size: 2em;
 	color: #1a2530;
@@ -77,6 +73,42 @@ h3 {
 .nav_header a:hover {
 	color: #808b96;
 	background-color: #415161;
+}
+
+.search_block {
+	padding: 1em;
+}
+
+#search_input {
+	border-radius: 10px;
+	padding: 1em;
+	background-color: #273748;
+	border: none;
+	outline: none;
+	color: #999;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#search_input:focus {
+	color: white;
+}
+
+#search_results {
+
+}
+
+#search_results li {
+	list-style-type: none;
+	padding: 0;
+}
+
+#search_results a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;	
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .nav ul {
@@ -92,28 +124,24 @@ h3 {
 	box-sizing: border-box;
 }
 
-.nav a:hover {
-	background-color: #415161;
-}
-
 .menu_item {
 	border: none;
 	display: block;
-	padding: 0 10px;
+	padding: 10px;
 	text-decoration: none;
 	color: #e25440;
 }
 
 .submenu_item {
-
 	padding-left: 20px;
 }
 
 .menu_item:hover {
-	cursor: pointer;	
+	cursor: pointer;
+	background-color: #415161;
 }
 
-#current_menu_item {	
+#current_menu_item {
 	background-color: #273748;
 }
 
@@ -167,6 +195,23 @@ h3 {
 ██║     ██║  ██║╚██████╔╝███████╗    ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║██║██║ ╚████║███████╗██║  ██║
 ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
 */
+
+.tags {
+	margin-left: 25%;
+	margin-top: 50px;
+	float: left;
+	padding: 0 10%;
+	width: 55%;
+}
+
+.tag {
+	padding: .1em .4em;
+	background: #e8f2fb;
+	border: 1px solid #c9e1f6;
+	border-radius: 3px;
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+	font-size: .85em;
+}
 
 .page_container {
 	margin-left: 25%;

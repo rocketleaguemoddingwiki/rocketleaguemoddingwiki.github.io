@@ -1,6 +1,14 @@
 ---
 layout: default
 title: SOFTWARES
+indexed: true
+tags:
+  - blender
+  - decryptor
+  - ue viewer
+  - umodel
+  - photoshop
+  - gimp
 ---
 # Blender
 [Blender](https://www.blender.org/download/) is a free 3D Modelling software. You can use it to create all the parts of your map, including meshes and UVs.

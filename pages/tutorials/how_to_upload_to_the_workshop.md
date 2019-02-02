@@ -1,6 +1,18 @@
 ---
 layout: default
-title: How to upload or update a map
+title: How to upload or update a map ?
+indexed: true
+tags:
+  - upload
+  - map
+  - update
+  - steam
+  - workshop
+  - umap
+  - udk
+  - vdf
+  - dasoccerguy
+  - steamcmd
 ---
 # First time
 Simply follow the [official tutorial](https://steamcommunity.com/sharedfiles/filedetails/?id=813629808) from Psyonix.

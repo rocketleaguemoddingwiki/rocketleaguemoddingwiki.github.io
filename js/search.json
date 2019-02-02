@@ -1,0 +1,18 @@
+---
+layout: null
+---
+[
+	{% for page in site.pages %}{% if page.indexed %}
+		{
+			{% capture pageTitle %}{{ page.title }}{% endcapture %}		
+			"title"    : "{{ pageTitle | escape }}",
+			"tags"     : "{{ page.tags | join: ', ' }}",
+			"url"      : "{{ site.baseurl }}{{ page.url }}"
+		},{% endif %}
+	{% endfor %}
+	{
+		"title"    : "About",
+		"tags"     : "about, renaiku",
+		"url"      : "{{ site.baseurl }}/about.html"
+	}
+]

@@ -13,11 +13,21 @@
 		{% include nav.html %}
 	</div>
 	<div class="page_container">
+		{% include tags.html %}
 		{{content}}
 	</div>
 	<div class="footer_container">
 		{% include footer.html %}		
 	</div>
-	<script type="text/javascript" src="{{site.baseurl}}/js/main.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/js/simple-jekyll-search.js"></script>
+	<script>
+		SimpleJekyllSearch({
+			searchInput: document.getElementById('search_input'),
+			resultsContainer: document.getElementById('search_results'),
+			json: '{{ site.baseurl }}/js/search.json',
+			searchResultTemplate: '<li><a class="menu_item" href="{{ site.url }}{url}">{title}</a></li>'
+		})
+	</script>
 </body>
 </html>
