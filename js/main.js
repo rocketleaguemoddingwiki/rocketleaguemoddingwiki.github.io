@@ -28,6 +28,20 @@ function getStyle(element, property){
 	return computedProperty;
 }
 
+function editPage(event, path) {
+	var githubPath = "https://github.com/rocketleaguemoddingwiki/rocketleaguemoddingwiki.github.io/tree/master";
+
+	if (path !== "/index.html") {
+		path = path.replace(".html", ".md");
+	}	
+
+	var pageToOpen = githubPath + path;
+
+	event.preventDefault();
+
+	window.open(pageToOpen, '_blank');
+}
+
 window.onload = function () { 
 
 	// Get the selected menu item, and if it is a submenu item, open the category

@@ -1,6 +1,6 @@
 <nav class="nav_header">
 	<a href="{{ site.baseurl }}/index.html">
-		MODDING WIKI
+		/__WIKI_<i class="fas fa-car-crash fa-flip-horizontal"></i>_<i class="fas fa-futbol"></i>__\
 	</a>
 </nav>
 
@@ -8,6 +8,7 @@
 	<ul>
 		{% assign links = site.data.navigation %}
 		{% assign count = 0 %}
+		{% assign currentPage = nil %}
 
 		{% for link in links %}
 
@@ -15,6 +16,7 @@
 
 			{% if page.url contains link.url %}
 				{% assign isCurrentPage = 'current_menu_item' %}
+				{% assign currentPage = link.url %}
 			{% endif %}
 
 			{% if link.sublinks %}
@@ -27,6 +29,7 @@
 
 							{% if page.url contains sublink.url %}
 								{% assign isCurrentSubPage = 'current_menu_item' %}
+								{% assign currentPage = sublink.url %}
 							{% endif %}
 
 							<li id="{{ isCurrentSubPage }}" class="js_identifier_submenu_item">
@@ -50,3 +53,7 @@
 		{% endfor %}
 	</ul>
 </nav>
+
+<a class="improve" onclick="editPage(event, '{{ currentPage }}')">
+	<i class="fas fa-edit improve_icon"></i><span class="improve_text">Edit this page</span>
+</a>

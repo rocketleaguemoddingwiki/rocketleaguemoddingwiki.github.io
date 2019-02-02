@@ -27,6 +27,15 @@ h1 {
 	color: #2C3E50;
 }
 
+h2 {
+	color: #2C3E50;	
+	margin-top: 50px;
+}
+
+h3 {
+	color: #2C3E50;
+}
+
 /* 
 ██╗     ███████╗███████╗████████╗    ██████╗  █████╗ ███╗   ██╗███████╗██╗     
 ██║     ██╔════╝██╔════╝╚══██╔══╝    ██╔══██╗██╔══██╗████╗  ██║██╔════╝██║     
@@ -56,13 +65,18 @@ h1 {
 
 .nav_header a {
 	text-decoration: none;
-	color: white;
-	font-weight: bolder;
 	display: inline-block;
 	width: 100%;
-	text-align: center;
-	top: 0;
-	font-size: 2.5em; 
+	text-align: center;	
+	vertical-align: middle;
+	padding: 16px 0;
+	font-size: 2em;
+	color: #1a2530;
+}
+
+.nav_header a:hover {
+	color: #808b96;
+	background-color: #415161;
 }
 
 .nav ul {
@@ -105,11 +119,45 @@ h1 {
 
 .dropdown {
 	display: none;
+
 	-o-transition: .5s;
 	-ms-transition: .5s;
 	-moz-transition: .5s;
 	-webkit-transition: .5s;
 }
+
+.improve {
+	background-color: #E25440;	
+	color: #b44333;
+	display: block;
+	position: fixed;
+	right: -248px;
+	top: 10%;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	-moz-transition: 1s;
+	-webkit-transition: 1s;
+}
+
+.improve:hover {
+	color: #f3bab2;
+	cursor: pointer;
+	right: 0;
+}
+
+.improve_text {
+	margin-right: 32px;
+	font-size: 2em;
+	vertical-align: middle;
+}
+
+.improve_icon {
+	font-size: 3em;
+	vertical-align: middle;	
+	margin: 32px;
+}
+
+
 
 /*
 ██████╗  █████╗  ██████╗ ███████╗     ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗ ██╗███╗   ██╗███████╗██████╗ 

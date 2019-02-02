@@ -24,7 +24,7 @@ Go in the following folder:<br/>
 ```
 C:\UDK\UDK-2013-02\UDKGame\Config
 ```
-and open the **DefaultEngine.ini** file with ([Notepad++](https://notepad-plus-plus.org/) or any other file editing software.<br/><br/>
+and open the **DefaultEngine.ini** file with [Notepad++](https://notepad-plus-plus.org/) or any other file editing software.<br/><br/>
 Under the heading **[UnrealEd.EditorEngine]**, add these last two lines:
 ``` python
 [UnrealEd.EditorEngine]
