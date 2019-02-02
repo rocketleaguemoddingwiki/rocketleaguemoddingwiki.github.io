@@ -17,9 +17,15 @@ The file must start with this following header:
 ---
 layout: default
 title: Your Page Title
+indexed: true
+tags:
+  - tag1
+  - tag2
+  - tag3
 ---
 ```
-
+`indexed: true` means that the search engine will include this page.
+`  - tagX` needs two spaces before the dash `-`.
 Then, add the url and title of this page in the `navigation.yml` file in the `_data` folder.
 
 # How to make awesome pages ?
