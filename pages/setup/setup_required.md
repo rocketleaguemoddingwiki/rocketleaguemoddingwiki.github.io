@@ -53,8 +53,14 @@ Go to this folder:
 ```
 C:\UDK\UDK-2013-02\Development\Src\Engine\Classes
 ```
-Open the **StaticMeshActor.uc** file with Notepad++ and find the **defaultproperties** line.<br/>
-Change it to be like with the higkighted lines below:
+Open the `StaticMeshActor.uc` file with Notepad++ and find the `defaultproperties` line.<br/>
+Add these three lines before the `End Object` line:
+```
+BlockRigidBody=false
+bDisableAllRigidBody=true
+bAcceptsDynamicDecals=false
+```
+It should look like that:
 ```python
 defaultproperties
 {
@@ -78,5 +84,5 @@ defaultproperties
 	OldCollisionType=COLLIDE_NoCollision;
 }
 ```
-
+> The next time you open UDK, it will ask you to **recompile scripts**. Accept. A command line window will open. When it's finished, you will need to close the command line window manually and relaunch UDK again.
 
