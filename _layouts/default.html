@@ -26,7 +26,7 @@
 			searchInput: document.getElementById('search_input'),
 			resultsContainer: document.getElementById('search_results'),
 			json: '{{ site.baseurl }}/js/search.json',
-			searchResultTemplate: '<li><a class="menu_item search_item" href="{{ site.url }}{url}"><i class="fas fa-search"></i> {title}</a></li>'
+			searchResultTemplate: '<li><a onmouseover="getFocus(this);" class="menu_item search_item" href="{{ site.url }}{url}"><i class="fas fa-search"></i> {title}</a></li>'
 		})
 	</script>
 </body>

@@ -62,6 +62,10 @@ function addTagToSearch(event, tag) {
 	event.preventDefault();
 }
 
+function getFocus(element) {
+	element.focus();
+}
+
 window.onload = function () { 
 
 	// Get the selected menu item, and if it is a submenu item, open the category
