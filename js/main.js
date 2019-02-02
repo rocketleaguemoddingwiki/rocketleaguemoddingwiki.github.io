@@ -29,7 +29,7 @@ function getStyle(element, property){
 }
 
 function editPage(event, path) {
-	var githubPath = "https://github.com/rocketleaguemoddingwiki/rocketleaguemoddingwiki.github.io/tree/master";
+	var githubPath = "https://github.com/rocketleaguemoddingwiki/rocketleaguemoddingwiki.github.io/blob/master";
 
 	if (path !== "/index.html") {
 		path = path.replace(".html", ".md");
