@@ -6,6 +6,7 @@ tags:
   - sticky
   - wall
   - walls
+  - physical
   - material
   - materials
   - mesh
