@@ -16,19 +16,21 @@ The file must start with this following header:
 ```
 ---
 layout: default
-title: Your Page Title
+title: Your page title
 indexed: true
 tags:
-  - tag1
-  - tag2
-  - tag3
+  - tagName1
+  - tagName2
+  - tagName3
 ---
 ```
+`layout` keep default.
+
+`title` is both the title at the top of the page and in the navigation menu.
+
 `indexed: true` means that the search engine will include this page.
 
-`  - tagX` needs two spaces before the dash `-`.
-
-Then, add the url and title of this page in the `navigation.yml` file in the `_data` folder.
+`  - tagName` needs two spaces before the dash `-`. Tags are used by the search engine.
 
 # How to make awesome pages ?
 Github pages like ours use `Jekyll` to convert `.md` files into `.html`.

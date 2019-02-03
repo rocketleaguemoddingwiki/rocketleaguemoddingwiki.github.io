@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SOFTWARES
+title: Software
 indexed: true
 tags:
   - blender

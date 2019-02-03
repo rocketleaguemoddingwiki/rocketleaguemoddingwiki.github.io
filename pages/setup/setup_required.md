@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SETUP (Required)
+title: Setup (Required)
 indexed: true
 tags:
   - setup
