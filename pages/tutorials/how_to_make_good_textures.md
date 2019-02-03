@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to make good textures ?
+title: How to improve textures ?
 indexed: true
 tags:
   - texture

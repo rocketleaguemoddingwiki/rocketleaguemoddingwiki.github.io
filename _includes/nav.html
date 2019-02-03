@@ -15,60 +15,80 @@
 </a>
 {% endif %}
 
-
 <nav class="nav">
 	<ul>
-		{% directory path: pages %}
+		{% assign caterogies = nil %}
+		{% assign caterogiesArray = nil %}
 
-			{% assign isCurrentPage = nil %}
+		{% for p in site.html_pages %}
+			{% if p.dir contains '/pages/' %}
 
-			{% if page.url == file.url %}
-				{% assign isCurrentPage = 'current_menu_item' %}
-			{% endif %}
+				{% assign pagePath = p.dir | append: p.name | replace: '.md', '.html' %}
+				{% assign isCurrentPage = nil %}
+				{% assign pagePathIfSelfCategory = '/pages/' | append: p.name | replace: '.md', '.html' %}
 
-			{% if file.name contains ".md" %}
+				{% if page.url == pagePath %}
+					{% assign isCurrentPage = 'current_menu_item' %}
+				{% endif %}
 
-				<li id="{{ isCurrentPage }}" class="js_identifier_menu_item">
-					<a class="menu_item" href="{{ site.baseurl }}{{ file.url | replace: '.md', '.html' }}">
-						<strong>{{ file.slug | upcase }}</strong>
-					</a>
-				</li>
+				{% if p.url == pagePathIfSelfCategory %}
 
-			{% else %}
+					<li id="{{ isCurrentPage }}" class="js_identifier_menu_item">
+						<a class="menu_item" href="{{ site.baseurl }}{{ p.url | replace: '.md', '.html' }}">
+							<strong>{{ p.title | upcase }} </strong>
+						</a>
+					</li>
 
-				<li id="{{ isCurrentPage }}" class="js_identifier_category">
-					<a class="menu_item" onclick="changeDisplay(event, 'dropdown_{{ file.slug }}', 'block')">
-						<strong>{{ file.slug | upcase }}</strong>
-					</a>
-					<ul id="dropdown_{{ file.slug }}" class="dropdown">
+				{% else %}
 
-					{% assign directoryPath = file.url %}
+					{% assign category = p.dir | remove: '/pages/' | remove: '/' %}
+					{% assign caterogiesArray = caterogies | split: ',' | uniq %}
+					{% assign categoryExists = false %}
 
-					{% directory path: directoryPath %}
-						
-						{% assign isCurrentSubPage = nil %}
-						{% assign link = directoryPath | append: '/' | append: file.slug | append: '.html' %}
-
-						{% assign pageTitle = 'ERROR: Title not found' %}
-						{% if page.url == link %}
-							{% assign isCurrentSubPage = 'current_menu_item' %}
+					{% for cat in caterogiesArray %}
+						{% if cat == category %}
+							{% assign categoryExists = true %}
+							{% break %}
 						{% endif %}
+					{% endfor %}
 
-						{% for p in site.pages %}
-							{% if p.url == link %}
-								{% assign pageTitle = p.title %}
-								{% break %}
-							{% endif %}
-						{% endfor %}
+					{% unless categoryExists %}
+						
+						{% assign caterogies = caterogies | append: category | append: ',' %}
 
-						<li id="{{ isCurrentSubPage }}" class="js_identifier_submenu_item">
-							<a class="menu_item submenu_item" href="{{ link }}">{{ pageTitle }}</a>
+						<li class="js_identifier_category">
+							<a class="menu_item" onclick="changeDisplay(event, 'dropdown_{{ category }}', 'block')">
+								<strong>{{ category | upcase }}</strong>
+							</a>
+							<ul id="dropdown_{{ category }}" class="dropdown">
+
+								{% for sp in site.html_pages %}
+
+									{% assign spCategory = sp.dir | remove: '/pages/' | remove: '/' %}
+
+									{% if spCategory == category %}
+
+										{% assign isCurrentSubPage = nil %}
+										{% assign subpagePath = sp.dir | append: sp.name | replace: '.md', '.html' %}
+
+										{% if page.url == subpagePath %}
+											{% assign isCurrentSubPage = 'current_menu_item' %}
+										{% endif %}
+
+										<li id="{{ isCurrentSubPage }}" class="js_identifier_submenu_item">
+											<a class="menu_item submenu_item" href="{{ sp.url }}">{{ sp.title | capitalize }}</a>
+										</li>
+
+									{% endif %}
+
+								{% endfor %}
+
+							</ul>
 						</li>
-					{% enddirectory %}
-					</ul>
-				</li>
+					{% endunless %}
+				{% endif %}
 
 			{% endif %}
-		{% enddirectory %}
+		{% endfor %}
 	</ul>
 </nav>
