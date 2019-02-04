@@ -1,6 +1,6 @@
 ---
 layout: default
-title: UDK Tour - Cameras
+title: UDK Tour \- Cameras
 indexed: true
 tags
   - udk
