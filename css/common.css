@@ -20,9 +20,9 @@ img {
 	position: relative;
 	width: 80%;
 	margin: 25px auto;
-	border: 1px solid #ddd;
+	border: 5px solid #2C3E50;
 	border-radius: 4px;
-	padding: 5px;
+	padding: 0px;
 }
 
 .img_overlay {
@@ -54,7 +54,11 @@ img {
 }
 
 .img_expand {
-	text-align: right;
+	position: absolute;
+	top: 50%;
+	right: 1%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 
 blockquote p {
