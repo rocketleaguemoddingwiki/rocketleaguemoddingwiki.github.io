@@ -277,6 +277,7 @@ h3 {
 	padding: 0 10%;
 	word-break: break-word;
 	min-height: 100vh;
+	line-height: 1.6em;
 }
 
 .footer_container {

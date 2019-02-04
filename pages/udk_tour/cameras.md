@@ -9,6 +9,11 @@ tags:
   - cam
   - ball
   - ballcam
+  - cameraactor
+  - actor
+  - setcameratarget
+  - kismet
+  - kismets
 ---
 Add a `CameraActor` into the level. That will now be the exhibition match startup camera. 
 {% include image.html filename="camera_1.png" alt_text="Startup Camera" %}
