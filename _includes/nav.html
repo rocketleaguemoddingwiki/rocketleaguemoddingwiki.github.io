@@ -35,7 +35,7 @@
 
 					<li id="{{ isCurrentPage }}" class="js_identifier_menu_item">
 						<a class="menu_item" href="{{ site.baseurl }}{{ p.url | replace: '.md', '.html' }}">
-							<strong>{{ p.title | upcase }} </strong>
+							<strong>{{ p.title | upcase | replace: '_', ' ' }} </strong>
 						</a>
 					</li>
 
@@ -58,7 +58,7 @@
 
 						<li class="js_identifier_category">
 							<a class="menu_item" onclick="changeDisplay(event, 'dropdown_{{ category }}', 'block')">
-								<strong>{{ category | upcase }}</strong>
+								<strong>{{ category | upcase | replace: '_', ' '}}</strong>
 							</a>
 							<ul id="dropdown_{{ category }}" class="dropdown">
 
