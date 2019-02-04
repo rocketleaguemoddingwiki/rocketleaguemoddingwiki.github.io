@@ -53,6 +53,10 @@ img {
 	-ms-transform: translate(-50%, -50%);
 }
 
+.img_expand {
+	float: right;
+}
+
 blockquote p {
 	border-left: 0.3em solid #2C3E50;
 	padding-left: 0.5em;
