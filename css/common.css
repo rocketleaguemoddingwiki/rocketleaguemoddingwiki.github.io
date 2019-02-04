@@ -10,18 +10,17 @@ body {
 }
 
 img {
-	display: block;
-	max-width: 80%;
-	margin: 25px auto;
-	height: auto;
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	padding: 5px;
+	max-width: 100%;
+	height: auto;	
 }
 
 .img_container {
-  position: relative;
-  width: 50%;
+	position: relative;
+	width: 80%;
+	margin: 25px auto;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
 }
 
 .img_overlay {
@@ -37,19 +36,19 @@ img {
 }
 
 .img_container:hover .img_overlay {
-  height: 10%;
+	height: 10%;
 }
 
 .img_alt_text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+	white-space: nowrap; 
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 
 blockquote p {
