@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to make Sticky Walls ?
+title: How to use any in-game asset ?
 indexed: true
 tags:
   - sticky
