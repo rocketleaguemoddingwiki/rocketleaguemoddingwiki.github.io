@@ -64,14 +64,4 @@ You're done!
 
 > Save often! When dealing with external packages, UDK likes to crash way too much. Sometimes when I was making the dummy assets it would literally crash after every time I saved the package, but at least it crashes after the save so everything gets saved. Also make a backup of your map often, once my UDK just kept crashing when trying to load a map for no reason (Day before it worked), so everything was lost.
 
-If you want to use the parameters of the materials in material instances, you can do that by creating dummy parameters to your material based on the real ones (Expand the material in UE Explorer and you can see all the parameters), creating a material instance into your own level package. You can take a look at how I did it with the Dummy Assets. Some parameters seem to do nothing and Static Switch Parameters and Static Bool Parameters break the material instances completely, so you need to avoid those. This is also the case for some engine materials which is why I was able to make an engine material that before didn't work with instances, work. https://streamable.com/tpcwk
-
-<iframe src="https://streamable.com/s/tpcwk/oixxko" frameborder="0" width="100%" height="100%" allowfullscreen s
-tyle="
-	position: relative;
-	width: 80%;
-	margin: 25px auto;
-	border: 5px solid #2C3E50;
-	border-radius: 4px;
-	padding: 0px;
-"></iframe>
+If you want to use the parameters of the materials in material instances, you can do that by creating dummy parameters to your material based on the real ones (Expand the material in UE Explorer and you can see all the parameters), creating a material instance into your own level package. You can take a look at how I did it with the Dummy Assets. Some parameters seem to do nothing and Static Switch Parameters and Static Bool Parameters break the material instances completely, so you need to avoid those. This is also the case for some engine materials which is why I was able to make an engine material that before didn't work with instances, work. [Video example](https://streamable.com/tpcwk).
