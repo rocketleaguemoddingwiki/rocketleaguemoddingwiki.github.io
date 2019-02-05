@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cameras
+title: Keyboard shortcuts
 indexed: true
 tags:
   - udk
