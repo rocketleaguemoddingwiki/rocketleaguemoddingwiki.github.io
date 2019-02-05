@@ -15,7 +15,9 @@
 	<div class="title containerOffset">
 		{{ page.title | upcase }}
 	</div>
-	{% include tags.html %}
+	{% if page.tags %}
+		{% include tags.html %}
+	{% endif %}
 	<div class="page_container containerOffset">
 		{{content}}
 	</div>
