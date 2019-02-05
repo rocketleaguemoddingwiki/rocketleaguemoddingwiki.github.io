@@ -66,6 +66,6 @@ You're done!
 
 If you want to use the parameters of the materials in material instances, you can do that by creating dummy parameters to your material based on the real ones (Expand the material in UE Explorer and you can see all the parameters), creating a material instance into your own level package. You can take a look at how I did it with the Dummy Assets. Some parameters seem to do nothing and Static Switch Parameters and Static Bool Parameters break the material instances completely, so you need to avoid those. This is also the case for some engine materials which is why I was able to make an engine material that before didn't work with instances, work. https://streamable.com/tpcwk
 
-<div class="img_container">
+<div style="width: 80%; margin: auto;">
 	<iframe src="https://streamable.com/s/tpcwk/oixxko" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
 </div>
