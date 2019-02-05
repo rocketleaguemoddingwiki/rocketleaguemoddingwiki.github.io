@@ -26,7 +26,7 @@ Blender default units work with UDK perfectly from my experience. If you changed
 
 {% include image.html filename="blender_to_rl_1.png" alt_text="Weird artifacts" %}
 
-In blender, make sure you can export fbx by enabling the fbx export add-on. Now select your mesh and go file -> export -> FBX.
+> In blender, make sure you can export fbx by enabling the fbx export add-on. Now select your mesh and go file -> export -> FBX.
 
 ### Optionnaly
 > Check export selected and then go to geometry tab. There you can change the smoothing from edge (Left image) to face (Right image), this will make the mesh appear smooth in UDK if the mesh is set to Smooth in blender. Then just export it into your mesh folder.
