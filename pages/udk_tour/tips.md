@@ -38,5 +38,5 @@ You will often need to add a special kind of actor such as boost pad TA, or Play
 Let’s say I want to attach an actor into another by going into the properties -> Attachment -> Base.
 {% include image.html filename="udk_tips_2.png" alt_text="An actor property in the properties window" %}
 You will first need to lock the properties from the lock icon, select the parent actor and then press the green arrow in the locked properties. The same technique can be used to set the mesh, physical materials for materials for example, but only by selecting the target from the content browser instead of the viewport.
-{% include image.html filename="udk_tips_1.png" alt_text="A good modder is organized" %}
+{% include image.html filename="udk_tips_3.png" alt_text="A good modder is organized" %}
 The magnifier takes you to the target and the square clears the property.
