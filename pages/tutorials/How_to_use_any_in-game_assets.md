@@ -60,7 +60,7 @@ You're done!
 {% include image.html filename="use_assets_7.png" alt_text="UE Explorer" %}
 {% include image.html filename="use_assets_8.png" alt_text="New Material popup window" %}
 {% include image.html filename="use_assets_9.png" alt_text="Actor properties window" %}
-{% include image.html filename="use_assets_10.png" alt_text="In-game result" %}
+{% include image.html filename="use_assets_10.jpg" alt_text="In-game result" %}
 
 > Save often! When dealing with external packages, UDK likes to crash way too much. Sometimes when I was making the dummy assets it would literally crash after every time I saved the package, but at least it crashes after the save so everything gets saved. Also make a backup of your map often, once my UDK just kept crashing when trying to load a map for no reason (Day before it worked), so everything was lost.
 
