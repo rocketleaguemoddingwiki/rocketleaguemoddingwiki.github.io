@@ -10,7 +10,7 @@ tags:
   - brush
   - goalvolume
   - pointinspace
-
+  - gravity
 ---
 # Goals
 Move the brush to the desired position and right click -> Add Volume -> `GoalVolume_TA` to create goals. In the properties window, set Team number 0 for blue, Team Number 1 for orange. 
