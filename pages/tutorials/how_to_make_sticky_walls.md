@@ -15,7 +15,6 @@ tags:
   - derzo
   - derzodev
 ---
-[Original tutorial](https://www.reddit.com/r/RocketLeagueMods/comments/6vs9gw/collisions_on_custom_maps_are_finally_fixed_the/) by [u/DerzoDev](https://www.reddit.com/user/DerzoDev).
 # Editing UDK StaticMeshActor file
 If you followed the [Setup](https://rocketleaguemoddingwiki.github.io/pages/setup/setup_required.html) on this wiki, you can skip to the next part.
 

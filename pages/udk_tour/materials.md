@@ -7,9 +7,6 @@ tags:
   - material
   - materials
 ---
-[Original tutorial](https://www.reddit.com/r/RocketLeagueMods/comments/6vs9gw/collisions_on_custom_maps_are_finally_fixed_the/) by [u/DerzoDev](https://www.reddit.com/user/DerzoDev).
-[Original tutorial](https://www.reddit.com/r/RocketLeagueMods/comments/5olhh2/advanced_map_making_custom_texturesmaterials/) by [u/DerzoDev](https://www.reddit.com/user/glhglh) and [/u/KarlHeinzSchneider](https://www.reddit.com/user/KarlHeinzSchneider).
-
 # Introduction
 [u/DerzoDev](https://www.reddit.com/user/DerzoDev)'s up to date materials' [spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng)
 

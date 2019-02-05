@@ -12,11 +12,7 @@ tags:
   - mesh
   - meshes
   - udk
-  - derzo
-  - derzodev
 ---
-[Original tutorial](https://www.reddit.com/r/RocketLeagueMods/comments/6uc8lp/how_to_access_any_ingame_asset_for_mapping_rl/) by [u/DerzoDev](https://www.reddit.com/user/DerzoDev).
-
 # Overview
 With this method you can access any asset that is in the game files such as boost pads, goal explosions or background meshes for instance. You can also create material instances from the enormous material library created by Psyonix. Plus because everything is already in the game files, you don't even need to include anything extra in CookedPCConsole like before with some of the engine materials! 
 {% include image.html filename="use_assets_1.jpg" alt_text="In-game materials look stunning!" %}

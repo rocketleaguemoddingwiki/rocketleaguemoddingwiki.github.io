@@ -17,9 +17,6 @@ tags:
   - uv
   - unwrap
 ---
-
-[Original tutorial](https://docs.google.com/document/d/1g4wagWHXDp2n-fJ6_DrnlRG8XaZ6VLJAZ3zgDykga1Q) by [u/DerzoDev](https://www.reddit.com/user/DerzoDev).
-
 # Introduction
 
 Blender default units work with UDK perfectly from my experience. If you changed them to metric, everything in blender will need be much bigger. For the most part it works, but for example when you try to sculpt with dynamic topology with metric scaling, you have to set the scale to over 1000% so that it doesn’t completely fill with geometry. Also, if an object is big enough, blender viewport will have weird displaying artifacts.

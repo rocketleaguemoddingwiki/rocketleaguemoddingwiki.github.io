@@ -17,9 +17,6 @@ tags:
   - uv
   - unwrap
 ---
-
-[Original tutorial](https://docs.google.com/document/d/1g4wagWHXDp2n-fJ6_DrnlRG8XaZ6VLJAZ3zgDykga1Q) by [u/DerzoDev](https://www.reddit.com/user/DerzoDev).
-
 # Why blender ?
 * Curved surfaces are important part of RL and `BSP` doesn’t handle that well.
 > Technically, BSP (Binary Space Partitioning) refers to a data structure that is used to organize objects within a space, and thus it is not semantically correct. A more accurate term for this type of geometry would be CSG (Constructive Solid Geometry). However, the terms BSP and CSG are used interchangeably so just keep that in mind if you come across either of these terms in other docs. https://api.unrealengine.com/udk/Three/UsingBspBrushes.html

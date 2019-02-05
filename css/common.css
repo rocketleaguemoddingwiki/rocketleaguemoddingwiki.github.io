@@ -70,7 +70,7 @@ h1 {
 	padding: 0.2em 1em;
 	margin-left: -50px;
 	margin-top: 50px;
-	font-size: 1.5em;
+	font-size: 1.5em;	
 	color: #2C3E50;
 }
 
@@ -100,7 +100,6 @@ h3 {
 	color: #fff;
 	width: 25%;
 	float: left;
-	overflow: scroll;
 }
 
 .nav_header {
@@ -247,12 +246,29 @@ h3 {
 ██║     ██║  ██║╚██████╔╝███████╗    ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║██║██║ ╚████║███████╗██║  ██║
 ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
 */
+.containerOffset {
+	margin-left: 25%;
+	float: left;
+}
+
+.title {	
+	text-align: center;
+	font-size: 2em;
+	background-color: #E25440;
+	font-weight: bolder;	
+	color: white;
+	width: 75%;
+	border-bottom: 10px solid #b9301c;
+	padding: 16px 0;
+}
 
 .tags {
-	float: left;
 	margin-bottom: 50px;
-	width: 100%;
+	width: 75%;
 	line-height: 2em;
+	text-align: center;
+	background-color: #E25440;
+	padding: 8px 0;
 }
 
 .tag {
@@ -272,9 +288,6 @@ h3 {
 }
 
 .page_container {
-	margin-left: 25%;
-	margin-top: 50px;
-	float: left;
 	padding: 0 10%;
 	word-break: break-word;
 	min-height: 100vh;
@@ -291,12 +304,12 @@ h3 {
 	width: 55%;
 }
 
-.page_container a {
+.page_container a, .tags a {
 	text-decoration: none;
 	color: #e25440;
 }
 
-.page_container a:hover {
+.page_container a:hover, .tags a:hover {
 	color: #b9301c;
 	-o-transition: .5s;
 	-ms-transition: .5s;

@@ -12,9 +12,11 @@
 	<div class="left_panel">
 		{% include nav.html %}
 	</div>
-	<div class="page_container">
-		{% include tags.html %}		
-		{% include title.html %}
+	<div class="title containerOffset">
+		{{ page.title | upcase }}
+	</div>
+	{% include tags.html %}
+	<div class="page_container containerOffset">
 		{{content}}
 	</div>
 	<div class="footer_container">
