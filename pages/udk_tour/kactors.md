@@ -27,19 +27,19 @@ You can add a physical materials to a `KActor`. You can control:
 * Damping (Adds force to reduce velocity)
 
 # Moving KActors with Matinee
-Let’s create a working matinee first and then worry about the collisions. Duplicate your KActor and convert it into a Mover/Interpactor. Open kismet and create a new matinee. Play it on level load event, select the matinee and check Looping. Now double click it to open it up.
+Let’s create a working matinee first and then worry about the collisions. Duplicate your `KActor` and convert it into a `Mover/Interpactor`. Open `kismet` and create a new `matinee`. Play it on `level load` event, select the matinee and check Looping. Now double click it to open it up.
 
-Select the Interpactor and right click in matinee and Create Empty Group. Right click the group box and press Add Movement Track. I recommend creating a keyframe to the end with same exact transform as start, this way it’ll loop smoothly. You can move the timeline, move the interpactor and hit enter to create a keyframe and make sure to drag the green triangle on the bottom all the way to the right. When the matinee works in UDK, you can see it in game too.
+Select the `Interpactor` and right click in matinee and `Create Empty Group`. Right click the group box and press `Add Movement Track`. I recommend creating a keyframe to the end with same exact transform as start, this way it’ll loop smoothly. You can move the timeline, move the interpactor and hit enter to create a keyframe and make sure to drag the green triangle on the bottom all the way to the right. When the matinee works in UDK, you can see it in game too.
 {% include image.html filename="kactors_2.gif" alt_text="Flying doughnut" %}
 
-Now the collisions, there’s an easy, but not perfect way to do it. We are rapidly teleporting the KActor instead of using physics to do it, this is why it can’t bump you. It also means that if the mesh is thin, you might go through it. Physics constraints (Hinge/pulley actors) would solve it, but we haven’t got them to work yet, however thrusters do work, more on that later.
+Now the collisions, there’s an easy, but not perfect way to do it. We are rapidly teleporting the KActor instead of using physics to do it, this is why it can’t bump you. It also means that if the mesh is thin, you might go through it. Physics constraints (Hinge/pulley actors) would solve it, but we haven’t got them to work yet, however `thrusters` do work, more on that later.
 
 You can do some kismet magic to set the velocity of the KActor towards the target and delay loop it which works as expected, but you can’t set the angular velocity.
 
-On level load, teleport the KActor into the interpactor with a teleport node. Connect the node output to its input and set a 0.001 second delay to it. Create a physical material for the KActor, set the density, linear damping and angular damping to 100000. Also remember to check hidden game on InterpActor properties. Now test it in game, it should work pretty well.
+On `level load`, teleport the `KActor` into the `Interpactor` with a teleport node. Connect the node output to its input and set a 0.001 second delay to it. Create a physical material for the KActor, set the density, linear damping and angular damping to 100000. Also remember to check hidden game on `InterpActor` properties. Now test it in game, it should work pretty well.
 {% include image.html filename="kactors_3.png" alt_text="Kismet" %}
 {% include image.html filename="kactors_4.gif" alt_text="Crazy Aerial Time aka CAT" %}
-To make a trigger event for it, just use event rigidbody collision with MaxTriggerCount as 0. From there you can teleport the toucher to somewhere else for example. Just note that Teleport doesn’t work on the ball, for that you’d have to use GetActorLocation, SetActorLocation and SetVelocity nodes.
+To make a trigger event for it, just use event `Rigidbody Collision` with `MaxTriggerCount` as 0. From there you can teleport the toucher to somewhere else for example. Just note that `Teleport` doesn’t work on the ball, for that you’d have to use `GetActorLocation`, `SetActorLocation` and `SetVelocity` nodes.
 {% include image.html filename="kactors_5.png" alt_text="Kismet" %}
 {% include image.html filename="kactors_6.gif" alt_text="Crazy Aerial Time aka CAT" %}
-If you want a mesh that doesn’t move but still can trigger collision event, just remove the matinee and the InterpActor. Event RigidBodyCollision for DynamicMesh_TA actors should be coming with the dummy classes update, so then you can get trigger events from complex collisions!
+If you want a mesh that doesn’t move but still can trigger collision event, just remove the matinee and the InterpActor. Event `RigidBodyCollision` for `DynamicMesh_TA` actors should be coming with the dummy classes update, so then you can get trigger events from complex collisions!
