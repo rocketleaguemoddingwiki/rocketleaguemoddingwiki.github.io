@@ -44,7 +44,7 @@ img {
 .img_alt_text {
 	white-space: nowrap; 
 	color: white;
-	font-size: 2em;
+	font-size: 1em;
 	position: absolute;
 	overflow: hidden;
 	top: 50%;
