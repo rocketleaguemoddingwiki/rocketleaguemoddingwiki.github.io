@@ -43,7 +43,8 @@ I like to use blender for creating meshes because it’s fast, versatile and fre
 
 You could also make curved surfaces using `subdivision surface modifier`, curves & array modifiers, booleans or even like metaballs or something. Just make sure the triangle density stays reasonable
 Duplicate the mesh and move it into separate layers with `Ctrl + M` before committing something big or save into multiple files often.
-Before exporting, apply the location, rotation and scale with `Ctrl + A`
+Before exporting, apply the location, rotation and scale with `Ctrl + A`.
+
 `UV Unwrap` the mesh before importing it into UDK. If you’re lazy, just select all in edit mode, press `U` and `Auto UV Unwrap`. You can tile a repeating texture by scaling the UVs in UV/Image editor, only do this if your mesh will have a tiling material
 
 {% include image.html filename="blender_basics_3.gif" alt_text="CHANGE_THIS" %}
