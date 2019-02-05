@@ -1,6 +1,6 @@
 ---
 layout: default
-title: From Blender to RL
+title: From Blender to Rocket League
 indexed: true
 tags:
   - blender
