@@ -90,7 +90,7 @@ When done, import your 5 textures in your package, no particular options. When t
 
 > You could just rotate the textures in your image editor instead of Setting the Team_1 Y mirror, but I find it easier to keep them all in the same orientation.
 
-> To have a Rocket League perfect feel, both Base and Grass textures could be the same. But i'll show here how you can have different textures on them. Who know, you could have mud on your base texture and don't want it repeated on your grass texture.
+> To have a Rocket League perfect feel, both Base and Grass textures could use the same texture. But i'll show here how you can have different textures on them. Who know, you could have mud on your base texture and don't want it repeated on your grass texture.
 
 
 # CREATE THE MATERIALS
