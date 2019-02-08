@@ -51,7 +51,7 @@ The material will have a texture and a mask. The texture will have an alpha laye
 # A LAST EXPLANATION
 Rocket League grass uses actually 2 different textures for `grass` and `base`. The grass one represents the whole field and the base one only a quarter of it. I didn't managed to find how the game actually mirrors and place them, but I managed to make it work, with a very simple trick: work by thinking that blue and orange side are two separate pieces. Especially for the `grass`.
 
-The `base` mesh needs to be splitted and have two materials (see picture below).
+The `base` mesh needs to have two materials (see picture below).
 This default mesh is `eurostadium_assets.Meshes.Grass_Base` in the `Dummy Assets`. 
 {% include image.html filename="grass_2.jpg" alt_text="The base has 2 Materials" %}
 
