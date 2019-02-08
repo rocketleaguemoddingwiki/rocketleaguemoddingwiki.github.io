@@ -79,7 +79,7 @@ And of course, keep the file extension as `.tga`.
 
 > You can name them how you want, but it will be easier if we all use the same pattern names.
 
-Now you can edit your 5 files. Remember that the four copies are going to be applied on a Team side.
+Now you can edit your 5 files.
 
 > 0 is for blue.
 The mask will be applied on the whole field, not only a side.
