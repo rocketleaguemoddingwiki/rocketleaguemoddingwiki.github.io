@@ -1,4 +1,7 @@
 # Rocket League Modding Wiki
+
+If you were looking the the website, it's [HERE](rocketleaguemoddingwiki.github.io).
+
 This is still a WIP
 
 # How to help ?
