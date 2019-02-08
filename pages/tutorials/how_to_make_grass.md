@@ -29,7 +29,7 @@ The cool thing is that we can have 2 differents mask textures. One for the `gras
 
 This mask is applied to the whole size of the field.
 
-> To confirm:
+### To confirm:
 > With other assets, it may show something else than dirt (maybe pavements or metal depending on the map)
 
 ## GRASS
@@ -37,7 +37,7 @@ It's a mesh that has a `material` applied. It's a `#` shape. I mean... planes th
 
 The material will have a texture and a mask. The texture will have an alpha layer that will draw the field white lines on the `grass`..
 
-> To Confirm
+### To confirm:
 > The height of the cutted grass depends of the grey level of the mask
 
 ## BASE
@@ -45,7 +45,7 @@ It's a `Plane` mesh that has a `material` applied.
 
 The material will have a texture and a mask. The texture will have an alpha layer that will draw the field white lines on the `base`.
 
-> To Confirm
+### To confirm:
 > The density of the dirt that is replacing the base texture depends of the grey level of the mask
 
 # A LAST EXPLANATION
@@ -81,9 +81,8 @@ And of course, keep the file extension as `.tga`.
 Now you can edit your 5 files. Remember that the four copies are going to be applied on a Team side.
 
 > 0 is for blue.
-> The mask will be applied on the whole field, not only a side.
-> 
-> remember ?
+The mask will be applied on the whole field, not only a side.
+remember ?
 
 {% include image.html filename="grass_3.jpg" alt_text="The mask is applied to the whole field. Base and Grass aren't." %}
 
