@@ -16,7 +16,7 @@ Be sure to have [Dummy Assets](https://rocketleaguemods.com/mods/rl-dummy-assets
 You will also need an image editor software such as [Gimp](https://www.gimp.org/downloads/) or Photoshop, because we will work with [.TGA](https://en.wikipedia.org/wiki/Truevision_TGA) files.
 
 # A SMALL EXPLANATION OF THE GRASS LAYERS
-First, you need to know that all materials that are about the grass are centered at 0,0,0. Which means that even if you move a mesh, it' texture will still be centered at 0,0,0. Weird.
+First, you need to know that all materials that are about the grass are centered at 0,0,0. Which means that even if you move a mesh, its texture will still be centered at 0,0,0. Weird.
 
 Grass works with 3 layers (`mask`, `grass` and `base`), and we will explain them from top to bottom.
 
