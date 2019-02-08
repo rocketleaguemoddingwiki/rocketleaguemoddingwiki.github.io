@@ -101,7 +101,7 @@ Create an Instance of `park_assets.Materials.Grass_Base_Team1_MIC` in your packa
 
 Edit this material instance and set the `Diffuse` parameter to your `Field_Base_Team_0` and the GrassMask  parameter to your `mask` texture. You should change the editor Color to be blue, it will be easier on the viewport to recognize it. Don't forget to check the boxes to override the defaults game settings.
 
-Now, create a copy in this instance just next to the previous one, repeat the part above by changing it all with `Team_1`.
+Now, create a copy in this instance just next to the previous one, repeat the part above by changing it all with `Team_1` and setting the color to orange. It will be easier to recognize it on the viewport.
 
 The default mesh `eurostadium_assets.Meshes.Grass_Base` has two materials slots. You can set them now. Slot 0 (the first one) for Team_0 ... I think you know what to set in the slot 1.
 
