@@ -28,6 +28,7 @@ I say "dig" because with the park_p assets (the one we'll use in this tutorial),
 The cool thing is that we can have 2 differents mask textures. One for the `grass`, and one for the `base`. But we will use only one here to keep it simple.
 
 This mask is applied to the whole size of the field.
+{% include image.html filename="grass_3.jpg" alt_text="The mask is applied to the whole field. Base and Grass aren't." %}
 
 ### To confirm:
 > With other assets, it may show something else than dirt (maybe pavements or metal depending on the map)
@@ -84,13 +85,29 @@ Now you can edit your 5 files.
 > The textures ending with 0 are for blue side. The mask will be applied on the whole field, not only a side.
 remember ?
 
-{% include image.html filename="grass_3.jpg" alt_text="The mask is applied to the whole field. Base and Grass aren't." %}
+I will use these textures:
+{% include image.html filename="grass_7.png" alt_text="Mask - Field_Grass_Team_0 - Field_Base_Team_0" %}
+
+I will keep the Team_1 files unchanged.
 
 When done, import your 5 textures in your package, no particular options. When they are in you package, you will need to double-click each of the 4 `grass` and `base` textures to edit them. All the textures ending by `Team_0` should have the parameter `Adress X` setted as mirror and `Adress Y` setted as wrap. `Team_1` should have **both** X and Y as mirror.
 
 > You could just rotate the textures in your image editor instead of Setting the Team_1 Y mirror, but I find it easier to keep them all in the same orientation.
 
 > To have a Rocket League perfect feel, both Base and Grass textures could use the same texture. But i'll show here how you can have different textures on them. Who know, you could have mud on your base texture and don't want it repeated on your grass texture.
+
+# PICTURES TO UNDERSTAND
+The mask is applied to the whole field, it's not mirrored or repeted or clamped or whatever. Think like it's streched:
+{% include image.html filename="grass_4.jpg" alt_text="The mask is applied to the whole field" %}
+
+As you can see below, `base`and `grass`are applied only to a half of a field and they are mirrored (because remember they are 1/4 of the whole field texture). But the `mask` is applied to the whole field. Don't ask me why. Ask Psyonix.
+{% include image.html filename="grass_3.jpg" alt_text="Base and Grass are mirrored" %}
+
+Closer view, you can see how the `mask` cut the `grass` and dig the `base` (it adds dirt on your base texture). I had a Yellow square on my base texture, and you can see a few yellow pixels under the grass on the left side of the picture.
+{% include image.html filename="grass_8.png" alt_text="You almost don't see the yellow square on the base" %}
+
+If you tilt the camera, the `grass` let you see the `base` under itself, now you can see the yellow square. Imagine this yellow square as mud. In real life, the dirt (base) is muddy. Not the grass on top of it.
+{% include image.html filename="grass_9.png" alt_text="You almost don't see the yellow square on the base" %}
 
 
 # CREATE THE MATERIALS
