@@ -74,6 +74,7 @@ Rename them to have 4 files named like that:
 * Field_Base_Team_1
 * Field_Grass_Team_0
 * Field_Grass_Team_1
+
 And of course, keep the file extension as `.tga`.
 
 > You can name them how you want, but it will be easier if we all use the same pattern names.
