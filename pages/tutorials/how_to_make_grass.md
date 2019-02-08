@@ -16,6 +16,8 @@ Be sure to have [Dummy Assets](https://rocketleaguemods.com/mods/rl-dummy-assets
 You will also need an image editor software such as [Gimp](https://www.gimp.org/downloads/) or Photoshop, because we will work with [.TGA](https://en.wikipedia.org/wiki/Truevision_TGA) files.
 
 # A SMALL EXPLANATION OF THE GRASS LAYERS
+First, you need to know that all materials that are about the grass are centered at 0,0,0. Which means that even if you move a mesh, it' texture will still be centered at 0,0,0. Weird.
+
 Grass works with 3 layers (`mask`, `grass` and `base`), and we will explain them from top to bottom.
 
 ## MASK
@@ -97,16 +99,17 @@ When done, import your 5 textures in your package, no particular options. When t
 > To have a Rocket League perfect feel, both Base and Grass textures could use the same texture. But i'll show here how you can have different textures on them. Who know, you could have mud on your base texture and don't want it repeated on your grass texture.
 
 # PICTURES TO UNDERSTAND
-The mask is applied to the whole field, it's not mirrored or repeted or clamped or whatever. Think like it's streched:
+The `mask` is applied to the whole field, it's not mirrored or repeted or clamped or whatever. It's streched to the whole `base` mesh.
 {% include image.html filename="grass_4.jpg" alt_text="The mask is applied to the whole field" %}
+> The weird thing is that even by moving the grass meshes or base meshes, the materials will always be centered to 0,0,0
 
 As you can see below, `base`and `grass`are applied only to a half of a field and they are mirrored (because remember they are 1/4 of the whole field texture). But the `mask` is applied to the whole field. Don't ask me why. Ask Psyonix.
 {% include image.html filename="grass_3.jpg" alt_text="Base and Grass are mirrored" %}
 
-Closer view, you can see how the `mask` cut the `grass` and dig the `base` (it adds dirt on your base texture). I had a Yellow square on my base texture, and you can see a few yellow pixels under the grass on the left side of the picture.
+Closer view, you can see how the `mask` cut the `grass` and dig the `base` (it adds dirt on your `base` texture). I had a Yellow square on my base texture, and you can see a few yellow pixels under the grass on the left side of the picture.
 {% include image.html filename="grass_8.png" alt_text="You almost don't see the yellow square on the base" %}
 
-If you tilt the camera, the `grass` let you see the `base` under itself, now you can see the yellow square. Imagine this yellow square as mud. In real life, the dirt (base) is muddy. Not the grass on top of it.
+If you tilt the camera, the `grass` let you see the `base` under itself, now you can see the yellow square. Imagine this yellow square as mud. In real life, the dirt ( `base` ) is muddy. Not the grass on top of it.
 {% include image.html filename="grass_9.png" alt_text="You almost don't see the yellow square on the base" %}
 
 
