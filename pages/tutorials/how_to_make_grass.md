@@ -11,9 +11,6 @@ tags:
   - assets
   - mesh
 ---
-# TODO
-* Add pictures to this page
-
 # REQUIRED
 Be sure to have [Dummy Assets](https://rocketleaguemods.com/mods/rl-dummy-assets/) installed.
 You will also need an image editor software such as [Gimp](https://www.gimp.org/downloads/) or Photoshop, because we will work with [.TGA](https://en.wikipedia.org/wiki/Truevision_TGA) files.
