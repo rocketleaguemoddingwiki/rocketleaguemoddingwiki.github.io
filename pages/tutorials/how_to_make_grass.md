@@ -94,7 +94,7 @@ When done, import your 5 textures in your package, no particular options. When t
 
 
 # CREATE THE MATERIALS
-This is the hard part, you can get a bit lsot in the different packages. Use the search bar at the top of the Content Browser. It's the best way to go through the comming repetitive pain.
+This is the hard part, you can get a bit lost in the different packages. Use the search bar at the top of the Content Browser. It's the best way to go through the comming repetitive pain.
 
 ## BASE MATERIALS
 Create an Instance of `park_assets.Materials.Grass_Base_Team1_MIC` in your package. I will name it `Field_Base_Team_0_M` (with M for material).
