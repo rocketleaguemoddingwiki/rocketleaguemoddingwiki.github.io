@@ -81,8 +81,7 @@ And of course, keep the file extension as `.tga`.
 
 Now you can edit your 5 files.
 
-> 0 is for blue.
-The mask will be applied on the whole field, not only a side.
+> The textures ending with 0 are for blue side. The mask will be applied on the whole field, not only a side.
 remember ?
 
 {% include image.html filename="grass_3.jpg" alt_text="The mask is applied to the whole field. Base and Grass aren't." %}
