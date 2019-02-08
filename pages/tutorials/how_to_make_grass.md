@@ -29,8 +29,7 @@ I say "dig" because with the park_p assets (the one we'll use in this tutorial),
 
 The cool thing is that we can have 2 differents mask textures. One for the `grass`, and one for the `base`. But we will use only one here to keep it simple.
 
-This mask is applied to the whole size of the field.
-{% include image.html filename="grass_3.jpg" alt_text="The mask is applied to the whole field. Base and Grass aren't." %}
+This mask is applied to the whole `base`. Even for the `grass`, it's applied to the `base`size. I think the materials are tied.
 
 ### To confirm:
 > With other assets, it may show something else than dirt (maybe pavements or metal depending on the map)
