@@ -85,4 +85,4 @@ Now you can either:
 * open the mesh property window by double-click it and set the physical material to `StickyWalls`
 * edit an other material that usually handles only a texture and set the physical material to `StickyWalls`. Then drag and drop this other material on the mesh.
 
-{% include image.html filename="sticky_walls.gif" alt_text="They see me driftin'" %}
+{% include image.html filename="sticky_walls_1.gif" alt_text="They see me driftin'" %}
